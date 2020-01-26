@@ -19,7 +19,7 @@ while ($post = $posts->fetch())
         <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
-            <a href="#"><?= (html_entity_decode($post['title'])) ?></a>
+            <a href="?controller=PostController&action=showAction&id=<?= $post['id'] ?>"><?= (html_entity_decode($post['title'])) ?></a>
             
           </h4>
           <p>Publié le <?= $post['added_datetime_fr'] ?></p>

@@ -14,7 +14,7 @@
     <div class="card-body p-5">
       <h1 class="font-weight-light"><?php echo html_entity_decode($post->getTitle()) ?></h1>
       <hr>
-      <p style="font-size: 14px;" class="lead" >Publié le : <?php echo $post->getAddedDatetime() ?> par <?php echo html_entity_decode($post->getAuthor()) ?> </p>
+      <p style="font-size: 16px;" class="lead" >Par : <strong><?php echo html_entity_decode($post->getAuthor()) ?></strong>  <br>Publié le : <?php echo $post->getAddedDatetime() ?> </p>
       <p class="lead"><?php echo html_entity_decode($post->getContent()) ?></p>
     </div>
   </div>

@@ -5,10 +5,11 @@
 <h4><?php echo $lastPost['title'] ?></h4>
 </div>
 <hr>
-<p>Publié le : <?php echo $lastPost['added_datetime_fr'] ?><br>
-<?php echo $lastPost['author'] ?></p>
+<p> Par : <strong><?php echo $lastPost['author'] ?></p></strong>
+    Publié le : <?php echo $lastPost['added_datetime_fr'] ?><br>
+
 <p><?php echo html_entity_decode($lastPost['content']) ?> </p>
-<a href="?controller=PostController&action=showAction&id=<?= $lastPost['id'] ?>" title="Lire les commentaires">Lire les commentaires</a>
+<a href="?controller=PostController&action=showAction&id=<?= $lastPost['id'] ?>" title="Lire les commentaires">Lire l'article</a>
 <hr>
 
 <?php $content = ob_get_clean(); ?>
