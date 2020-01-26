@@ -9,7 +9,7 @@
     Publié le : <?php echo $lastPost['added_datetime_fr'] ?><br>
 
 <p><?php echo html_entity_decode($lastPost['content']) ?> </p>
-<a href="?controller=PostController&action=showAction&id=<?= $lastPost['id'] ?>" title="Lire les commentaires">Lire l'article</a>
+<a href="?controller=PostController&action=showAction&id=<?= $lastPost['id'] ?>" title="Lire l'article">Lire l'article</a>
 <hr>
 
 <?php $content = ob_get_clean(); ?>
